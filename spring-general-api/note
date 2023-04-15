@@ -1,0 +1,41 @@
+
+curl -X POST http://localhost:8085/api/embeded | jq
+curl -X GET http://localhost:8085/api/embeded | jq
+
+
+====>FlyWay Migration
+
+spring.flyway.url=jdbc:postgresql://localhost:5432/hibernate_db
+spring.flyway.schemas=flyway
+spring.flyway.user=postgres
+spring.flyway.password=postgres
+spring.flyway.locations=classpath:db/migration
+
+
+====>Hazelcast
+
+eski projelerde kullanılıyor
+https://medium.com/@grkm1acs/spring-boot-ile-hazelcast-distributed-cache-kullan%C4%B1m%C4%B1-e3640fd1c74c
+https://www.javainuse.com/spring/spring-boot-hazelcast
+
+====>Hibernate Cache
+1.yöntem:
+<groupId>org.hibernate</groupId>
+<artifactId>hibernate-ehcache</artifactId>
+<version>5.6.15.Final</version>
+
+entity üzerinde cache yapmayı sağlıyor
+Cache(usage= CacheConcurrencyStrategy.READ_ONLY, region="CPERSONEL")
+Cache(usage= CacheConcurrencyStrategy.READ_WRITE, region="CPERSONEL")
+
+2.yontem
+<artifactId>spring-boot-starter-cache</artifactId>
+<groupId>org.springframework.boot</groupId>
+
+metot bazında cache yapmayı sağlar
+@EnableCaching cache enable edilmeli
+@Cacheable("personels")
+@CacheEvict(value="personels", allEntries=true)
+@CustomCachingAnnotation
+
+

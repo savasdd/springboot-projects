@@ -1,0 +1,85 @@
+===HİBERNATE
+serizilation, deserizilation ->db driver yapar
+
+sessionfactor
+-uygulama genelinde çalışır
+-second level cache (api ve db arasında cache oluşturur)
+-connection pool
+-transaction
+-thread safe
+
+session
+-single thread
+-conection sağlar
+
+enumerated(value=type.strig)
+enum type
+
+@embeddable
+metadata
+-createdDate
+-updatedDate
+
+class Test
+-Metadata data
+
+ddl-auto=none
+resource
+-schema.sql -> içine table ddl yazılır
+run olunca bu dosyadan sql okunup tablo oluşturulur
+spring.sql.init.mode=always
+spring.jpa.defer-datasource.initialization=false
+
+flyway db migration tool
+flywayapp schema.sql **
+
+default conection poolsize 10 veriliyor
+default timeout 30 sn
+pool metricleri için prometheus kullanılabilir
+
+scratch.http ->idea source
+GET url
+curl url | jq -r . -> json data
+
+ab - Apache HTTP server benchmarking tool
+https://medium.com/bili%C5%9Fim-hareketi/apache-bench-ab-kullanarak-asp-net-core-web-api-servisinin-y%C3%BCk-testi-nas%C4%B1l-yap%C4%B1l%C4%B1r-c2019cdd723e
+
+pool durumu için grafana ve prometheus ile uygulama oluştur
+pool durumunu izlemeye al
+spring.datasource.hikkari.connection-timeout=4000
+
+optimistic lock -> version
+pessimistic lock -> deadlock olabilir
+
+tablo üzerinde price arttıran servis olsun buna istek gönderilir. ab ile yüklenince data bozulmaya başlar ve staleObjectStateException atar
+
+@Lock(LockModeType.PESSIMISTIC_READ)
+@Lock(optimistic)
+@Lock(pessimistic_write)
+findByName(name)
+
+@Version
+Integer version ->column yok
+
+@Transaction(isolation=serializable)
+dto implements serializable ***
+
+
+@OptimisticLocking(type = OptimisticLockType.DIRTY)
+@DynamicUpdate
+class entity
+
+hibernate-redis
+redisson-hibernate
+redis config yapılır
+@EnableCaching -> app
+
+@Cacheable
+@Cache(region,usage) -> entity
+redis down olursa bakmak gerekiyor
+
+hibernate-hazelcast
+daha güçlü
+metot bazında kullanılır
+
+
