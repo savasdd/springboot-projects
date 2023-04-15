@@ -24,9 +24,26 @@ public class CPersonelController {
         return new ResponseEntity<>(personelService.create(personel), HttpStatus.CREATED);
     }
 
+    @PutMapping(value = "/cpersonels/{id}")
+    public ResponseEntity<CPersonel> update(@PathVariable Long id, @RequestBody CPersonel personel) throws Exception {
+        return new ResponseEntity<>(personelService.update(id,personel), HttpStatus.OK);
+    }
+
+    @DeleteMapping(value = "/cpersonels/{id}")
+    public ResponseEntity<?> delete(@PathVariable Long id){
+        personelService.delete(id);
+        return new ResponseEntity<>(HttpStatus.OK);
+    }
+
+
     @GetMapping(value = "/cpersonels")
     public ResponseEntity<List<CPersonel>> getAll(){
-        return new ResponseEntity<>(personelService.getAll(),HttpStatus.OK);
+        return new ResponseEntity<>(personelService.getAllCache(),HttpStatus.OK);
+    }
+
+    @GetMapping(value = "/cpersonels1")
+    public ResponseEntity<List<CPersonel>> getAllCustom(){
+        return new ResponseEntity<>(personelService.getAllCacheCustom(),HttpStatus.OK);
     }
 
     @GetMapping(value = "/cpersonels/{id}")
