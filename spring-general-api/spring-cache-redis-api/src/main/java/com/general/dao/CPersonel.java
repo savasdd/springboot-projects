@@ -1,5 +1,6 @@
 package com.general.dao;
 
+import com.general.util.CommonUtils;
 import lombok.*;
 import org.springframework.cache.annotation.CacheConfig;
 
@@ -14,7 +15,7 @@ import java.io.Serializable;
 @EqualsAndHashCode
 @Entity
 @Table(name = "CPERSONEL")
-@CacheConfig(cacheNames={"personel"})
+@CacheConfig(cacheNames={CommonUtils.cache})
 public class CPersonel implements Serializable {
 
     private static final long serialVersionUID = 1L;

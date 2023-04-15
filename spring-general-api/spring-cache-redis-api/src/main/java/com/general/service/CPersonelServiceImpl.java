@@ -23,9 +23,6 @@ public class CPersonelServiceImpl implements CPersonelService{
 
     private final CPersonelRepository personelRepository;
 
-    @PersistenceContext
-    private EntityManager entityManager;
-
     public CPersonelServiceImpl(CPersonelRepository personelRepository) {
         this.personelRepository = personelRepository;
     }
@@ -62,7 +59,7 @@ public class CPersonelServiceImpl implements CPersonelService{
         return model;
     }
 
-    @Cacheable(CommonUtils.cache)
+    @Cacheable(value = CommonUtils.cache)
     @Override
     @Transactional
     public List<CPersonel> getAllCache() {
