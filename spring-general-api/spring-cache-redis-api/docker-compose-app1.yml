@@ -1,12 +1,12 @@
 version: '3.3'
 
 services:
-  redisapp_2:
+  redisapp_1:
     image: redisapp:latest
-    container_name: redis-api-2
+    container_name: redis-api-1
     restart: always
     ports:
-      - "8086:8085"
+      - "8085:8085"
     #    depends_on:
     #      - db
     environment:
