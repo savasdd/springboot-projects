@@ -1,0 +1,16 @@
+
+redis için uygulama scable olarak çalışmalıdır
+-dockerfile ile uygulama build edilir
+-redis docker-compose ile redis up edilir
+-docker-compose-app1 ile uygulama 8085 portunda up edilir
+-docker-compose-app2 ile uygulama 8086 portunda up edilir
+
+docker-compose -f docker-compose-redis.yml up
+docker-compose -f docker-compose-redis.yml down
+
+request:
+http://localhost:8085/api/cpersonels
+http://localhost:8086/api/cpersonels
+
+farklı portlar üzerinden atılan istekler aynı süreye göre cevap dönmektedir.
+çünkü redis cache yaptığı için bağımsız olarak çalışmaktadır.
