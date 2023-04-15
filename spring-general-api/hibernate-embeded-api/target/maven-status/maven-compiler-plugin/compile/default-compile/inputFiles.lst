@@ -1,0 +1,9 @@
+/home/savas/CUSTOM/github/springboot-basic-project/spring-general-api/hibernate-embeded-api/src/main/java/com/general/controller/PersonelController.java
+/home/savas/CUSTOM/github/springboot-basic-project/spring-general-api/hibernate-embeded-api/src/main/java/com/general/repository/PersonelRepository.java
+/home/savas/CUSTOM/github/springboot-basic-project/spring-general-api/hibernate-embeded-api/src/main/java/com/general/dao/PersonelType.java
+/home/savas/CUSTOM/github/springboot-basic-project/spring-general-api/hibernate-embeded-api/src/main/java/com/general/HibernateEmbededApplication.java
+/home/savas/CUSTOM/github/springboot-basic-project/spring-general-api/hibernate-embeded-api/src/main/java/com/general/service/PersonelServiceImpl.java
+/home/savas/CUSTOM/github/springboot-basic-project/spring-general-api/hibernate-embeded-api/src/main/java/com/general/dao/Personel.java
+/home/savas/CUSTOM/github/springboot-basic-project/spring-general-api/hibernate-embeded-api/src/main/java/com/general/dao/MetaData.java
+/home/savas/CUSTOM/github/springboot-basic-project/spring-general-api/hibernate-embeded-api/src/main/java/com/general/service/PersonelService.java
+/home/savas/CUSTOM/github/springboot-basic-project/spring-general-api/hibernate-embeded-api/src/main/java/com/general/dao/TotalPresonel.java

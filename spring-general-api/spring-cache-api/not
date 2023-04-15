@@ -1,0 +1,8 @@
+
+spring cachable yöntemi monolotik ve scable edilmeyen bir projede güzel çalışır.
+bu yöntem scable edilmiş bir uygulamda çalışmaz.
+Complice ve scable edilmiş uygulamalarda bu yöntem yerine redis gibi cachable sistemleri kullanılır
+
+java -Dserver.port=8085 -jar spring-cache-api-1.0-SNAPSHOT.jar
+
+

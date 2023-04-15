@@ -1,0 +1,7 @@
+com/general/config/BeanConfig.class
+com/general/repository/CategoryRepository.class
+com/general/service/StockService.class
+com/general/service/AccountService.class
+com/general/SpringBeanApplication.class
+com/general/service/CategoryService.class
+com/general/service/CategoryProcess.class

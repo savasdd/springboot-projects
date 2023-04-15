@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="spring-cache-api" />
         <module name="hibernate-flyway-api" />
+        <module name="spring-cache-redis-api" />
         <module name="hibernate-embeded-api" />
         <module name="spring-bean-api" />
       </profile>
@@ -19,6 +20,7 @@
       <module name="hibernate-flyway-api" options="-parameters" />
       <module name="spring-bean-api" options="-parameters" />
       <module name="spring-cache-api" options="-parameters" />
+      <module name="spring-cache-redis-api" options="-parameters" />
       <module name="spring-general-api" options="" />
     </option>
   </component>

@@ -19,6 +19,7 @@
         <module>hibernate-flyway-api</module>
         <module>spring-cache-api</module>
         <module>spring-bean-api</module>
+        <module>spring-cache-redis-api</module>
     </modules>
 
     <properties>
