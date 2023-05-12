@@ -27,22 +27,25 @@ public class MiniController {
     }
 
 
+    //get all list files
     @GetMapping(value = "/minios/all")
     public ResponseEntity<List<FileDto>> getAll() {
         return new ResponseEntity<>(service.getListObjects(), HttpStatus.OK);
     }
 
+    //get file with request params -> filename
     @GetMapping(value = "/minios")
     public ResponseEntity<Object> getObject(@RequestParam("filename") String fileName) throws IOException {
         return ResponseEntity.ok().contentType(MediaType.APPLICATION_OCTET_STREAM).body(IOUtils.toByteArray(service.getObjects(fileName)));
     }
 
+    //post file with body form-data -> title, description and file (selected file)
     @PostMapping(value = "/minios/upload")
     public ResponseEntity<FileDto> upload(@ModelAttribute FileDto fileDto) {
         return new ResponseEntity<>(service.uploadFile(fileDto), HttpStatus.CREATED);
     }
 
-
+    //download file on backend side
     @GetMapping(value = "/minios/download")
     public ResponseEntity<Object> objectDownload(HttpServletRequest request) throws IOException {
         String pattern = (String) request.getAttribute(BEST_MATCHING_PATTERN_ATTRIBUTE);
