@@ -6,12 +6,13 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="spring-cache-api" />
         <module name="hibernate-flyway-api" />
-        <module name="spring-cache-redis-api" />
         <module name="spring-minio-api" />
-        <module name="hibernate-embeded-api" />
         <module name="spring-bean-api" />
+        <module name="spring-cache-api" />
+        <module name="spring-firebase-api" />
+        <module name="spring-cache-redis-api" />
+        <module name="hibernate-embeded-api" />
       </profile>
     </annotationProcessing>
   </component>
@@ -22,6 +23,7 @@
       <module name="spring-bean-api" options="-parameters" />
       <module name="spring-cache-api" options="-parameters" />
       <module name="spring-cache-redis-api" options="-parameters" />
+      <module name="spring-firebase-api" options="-parameters" />
       <module name="spring-general-api" options="" />
       <module name="spring-minio-api" options="-parameters" />
     </option>
