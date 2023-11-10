@@ -1,5 +1,7 @@
 package com.general.controller;
 
+import com.general.data.options.DataSourceLoadOptions;
+import com.general.data.response.LoadResult;
 import com.general.entity.Department;
 import com.general.entity.Person;
 import com.general.service.DepartmentService;
@@ -15,15 +17,19 @@ import java.util.List;
 @RestController
 @RequestMapping("/api/departments")
 @CrossOrigin(allowedHeaders = "*", origins = "*")
-//@RequiredArgsConstructor
+@RequiredArgsConstructor
 public class DepartmentController {
 
-    @Autowired
-    private  DepartmentService service;
+    private final DepartmentService service;
 
     @GetMapping
     public ResponseEntity<List<Department>> getAll() {
         return ResponseEntity.ok(service.getAll());
+    }
+
+    @PostMapping(value = "/all")
+    public LoadResult findAll(@RequestBody DataSourceLoadOptions loadOptions) {
+        return service.getAllLoad(loadOptions);
     }
 
     @PostMapping

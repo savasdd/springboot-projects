@@ -1,5 +1,7 @@
 package com.general.service.impl;
 
+import com.general.data.options.DataSourceLoadOptions;
+import com.general.data.response.LoadResult;
 import com.general.entity.Department;
 import com.general.repository.DepartmentRepository;
 import com.general.service.DepartmentService;
@@ -12,11 +14,10 @@ import java.util.List;
 
 @Slf4j
 @Service
-//@RequiredArgsConstructor
+@RequiredArgsConstructor
 public class DepartmentServiceImpl implements DepartmentService {
 
-    @Autowired
-    private DepartmentRepository repository;
+    private final DepartmentRepository repository;
 
     @Override
     public List<Department> getAll() {
@@ -31,5 +32,13 @@ public class DepartmentServiceImpl implements DepartmentService {
 
         log.info("create department", model.getId());
         return model;
+    }
+
+    @Override
+    public LoadResult getAllLoad(DataSourceLoadOptions loadOptions) {
+        loadOptions.setRequireTotalCount(true);
+
+        log.info("get allDepartment");
+        return repository.load(loadOptions);
     }
 }

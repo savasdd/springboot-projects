@@ -67,3 +67,17 @@
         ]
     ]
 }
+
+---------------------------
+{
+    "skip": 0,
+    "take": 20,
+    "searchOperation": "contains",
+    "filter": [
+        [
+            "name",
+            "contains",
+            "o"
+        ]
+    ]
+}
