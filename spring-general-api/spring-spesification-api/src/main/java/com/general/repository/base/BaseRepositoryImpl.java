@@ -3,7 +3,7 @@ package com.general.repository.base;
 import com.general.data.options.DataSourceLoadOptionsBase;
 import com.general.data.options.GroupingInfo;
 import com.general.data.options.implementation.DataSourceLoadSpecification;
-import com.general.data.responseModel.LoadResult;
+import com.general.data.response.LoadResult;
 import com.vladmihalcea.hibernate.query.SQLExtractor;
 import org.hibernate.query.criteria.internal.expression.function.AggregationFunction;
 import org.hibernate.query.criteria.internal.path.SingularAttributePath;

@@ -1,7 +1,7 @@
 package com.general.repository.base;
 
 import com.general.data.options.DataSourceLoadOptionsBase;
-import com.general.data.responseModel.LoadResult;
+import com.general.data.response.LoadResult;
 import org.springframework.data.repository.NoRepositoryBean;
 import org.springframework.data.repository.Repository;
 

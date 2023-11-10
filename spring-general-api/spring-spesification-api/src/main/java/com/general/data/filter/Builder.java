@@ -1,4 +1,4 @@
-package com.general.utils;
+package com.general.data.filter;
 
 import com.general.entity.BaseEntity;
 import lombok.extern.slf4j.Slf4j;

@@ -1,4 +1,4 @@
-package com.general.data.responseModel;
+package com.general.data.response;
 
 import lombok.Getter;
 import lombok.Setter;

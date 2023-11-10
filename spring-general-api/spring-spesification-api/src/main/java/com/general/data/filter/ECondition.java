@@ -1,4 +1,4 @@
-package com.general.utils;
+package com.general.data.filter;
 
 public enum ECondition {
     and, or

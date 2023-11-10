@@ -1,4 +1,4 @@
-package com.general.utils;
+package com.general.data.filter;
 
 import de.danielbechler.diff.ObjectDifferBuilder;
 import de.danielbechler.diff.node.DiffNode;

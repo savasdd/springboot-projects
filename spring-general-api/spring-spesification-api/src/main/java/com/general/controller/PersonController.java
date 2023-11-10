@@ -1,7 +1,7 @@
 package com.general.controller;
 
 import com.general.data.options.DataSourceLoadOptions;
-import com.general.data.responseModel.LoadResult;
+import com.general.data.response.LoadResult;
 import com.general.entity.Person;
 import com.general.service.PersonService;
 import lombok.RequiredArgsConstructor;
