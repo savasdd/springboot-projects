@@ -1,5 +1,7 @@
 package com.general.controller;
 
+import com.general.data.options.DataSourceLoadOptions;
+import com.general.data.responseModel.LoadResult;
 import com.general.entity.Person;
 import com.general.service.PersonService;
 import lombok.RequiredArgsConstructor;
@@ -20,6 +22,11 @@ public class PersonController {
     @GetMapping
     public ResponseEntity<List<Person>> getAll() {
         return ResponseEntity.ok(service.getAll());
+    }
+
+    @PostMapping(value = "/all")
+    public LoadResult findAll(@RequestBody DataSourceLoadOptions loadOptions) {
+        return service.getAllLoad(loadOptions);
     }
 
     @PostMapping

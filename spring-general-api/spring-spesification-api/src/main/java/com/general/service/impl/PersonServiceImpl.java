@@ -1,5 +1,7 @@
 package com.general.service.impl;
 
+import com.general.data.options.DataSourceLoadOptions;
+import com.general.data.responseModel.LoadResult;
 import com.general.entity.Person;
 import com.general.repository.PersonRepository;
 import com.general.service.PersonService;
@@ -19,6 +21,13 @@ public class PersonServiceImpl implements PersonService {
     @Override
     public List<Person> getAll() {
         var list = repository.findAll();
+
+        return list;
+    }
+
+    @Override
+    public LoadResult getAllLoad(DataSourceLoadOptions loadOptions) {
+        var list = repository.load(loadOptions);
 
         return list;
     }
