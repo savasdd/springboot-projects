@@ -7,11 +7,11 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="hibernate-flyway-api" />
-        <module name="spring-jpa-spesification-api" />
         <module name="spring-minio-api" />
         <module name="spring-bean-api" />
         <module name="spring-cache-api" />
         <module name="spring-firebase-api" />
+        <module name="spring-spesification-api" />
         <module name="spring-cache-redis-api" />
         <module name="spring-websocket-api" />
         <module name="hibernate-embeded-api" />
@@ -27,8 +27,8 @@
       <module name="spring-cache-redis-api" options="-parameters" />
       <module name="spring-firebase-api" options="-parameters" />
       <module name="spring-general-api" options="" />
-      <module name="spring-jpa-spesification-api" options="-parameters" />
       <module name="spring-minio-api" options="-parameters" />
+      <module name="spring-spesification-api" options="-parameters" />
       <module name="spring-websocket-api" options="-parameters" />
     </option>
   </component>

@@ -23,7 +23,7 @@
         <module>spring-minio-api</module>
         <module>spring-firebase-api</module>
         <module>spring-websocket-api</module>
-        <module>spring-jpa-spesification-api</module>
+        <module>spring-spesification-api</module>
     </modules>
 
     <properties>
