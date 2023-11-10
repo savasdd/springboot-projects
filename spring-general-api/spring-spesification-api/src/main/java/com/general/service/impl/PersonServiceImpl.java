@@ -27,6 +27,8 @@ public class PersonServiceImpl implements PersonService {
 
     @Override
     public LoadResult getAllLoad(DataSourceLoadOptions loadOptions) {
+        loadOptions.setRequireTotalCount(true);
+
         var list = repository.load(loadOptions);
 
         return list;

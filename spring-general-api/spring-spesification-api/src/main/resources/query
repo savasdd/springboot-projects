@@ -1,0 +1,69 @@
+
+{
+    "skip": 0,
+    "take": 20,
+    "searchOperation": "contains",
+    "filter": [
+        [
+            "name",
+            "=",
+            "savaş"
+        ]
+    ]
+}
+
+---------------------------
+{
+    "skip": 0,
+    "take": 20,
+    "searchOperation": "contains",
+    "filter": [
+        [
+            "surName",
+            "contains",
+            "e"
+        ]
+    ]
+}
+
+---------------------------
+{
+    "skip": 0,
+    "take": 20,
+    "searchOperation": "contains",
+    "filter": [
+        [
+            "department.id",
+            "=",
+            "1"
+        ]
+    ]
+}
+
+---------------------------
+{
+    "skip": 0,
+    "take": 20,
+    "searchOperation": "contains",
+    "filter": [
+        [
+            "department.code",
+            "startswith",
+            "0"
+        ]
+    ]
+}
+
+---------------------------
+{
+    "skip": 0,
+    "take": 20,
+    "searchOperation": "contains",
+    "filter": [
+        [
+            "department.code",
+            "contains",
+            "01."
+        ]
+    ]
+}
