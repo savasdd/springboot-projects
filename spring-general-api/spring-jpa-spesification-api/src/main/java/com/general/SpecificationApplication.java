@@ -6,9 +6,9 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class JpaSpecificationApplication {
+public class SpecificationApplication {
     public static void main(String[] args) {
         CreatingDatabase.builder().build();
-        SpringApplication.run(JpaSpecificationApplication.class, args);
+        SpringApplication.run(SpecificationApplication.class, args);
     }
 }

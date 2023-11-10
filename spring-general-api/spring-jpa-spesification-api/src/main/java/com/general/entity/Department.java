@@ -44,7 +44,7 @@ public class Department extends BaseEntity implements Serializable {
 
     @JsonIgnore
     @OneToMany(mappedBy = "department")
-    @JsonManagedReference("person")
+    //@JsonManagedReference("person")
     private Set<Person> personSet = new HashSet<>();
 
 }

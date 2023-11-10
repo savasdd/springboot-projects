@@ -41,7 +41,7 @@ public class Person extends BaseEntity implements Serializable {
 
     @ManyToOne
     @JoinColumn(name = "department", referencedColumnName = "id")
-    @JsonBackReference("person")
+    //@JsonBackReference("person")
     private Department department;
 
 }
