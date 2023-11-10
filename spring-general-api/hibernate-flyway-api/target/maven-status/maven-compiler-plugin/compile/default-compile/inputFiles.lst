@@ -1,6 +1,6 @@
-/home/savas/CUSTOM/github/springboot-basic-project/spring-general-api/hibernate-flyway-api/src/main/java/com/general/controller/UnitController.java
-/home/savas/CUSTOM/github/springboot-basic-project/spring-general-api/hibernate-flyway-api/src/main/java/com/general/dao/Unit.java
-/home/savas/CUSTOM/github/springboot-basic-project/spring-general-api/hibernate-flyway-api/src/main/java/com/general/service/UnitServiceImpl.java
-/home/savas/CUSTOM/github/springboot-basic-project/spring-general-api/hibernate-flyway-api/src/main/java/com/general/service/UnitService.java
-/home/savas/CUSTOM/github/springboot-basic-project/spring-general-api/hibernate-flyway-api/src/main/java/com/general/HibernateFlywayApplication.java
-/home/savas/CUSTOM/github/springboot-basic-project/spring-general-api/hibernate-flyway-api/src/main/java/com/general/repository/UnitRepository.java
+C:\Projects\CUSTOM\githup\springboot-basic-project\spring-general-api\hibernate-flyway-api\src\main\java\com\general\dao\Unit.java
+C:\Projects\CUSTOM\githup\springboot-basic-project\spring-general-api\hibernate-flyway-api\src\main\java\com\general\service\UnitService.java
+C:\Projects\CUSTOM\githup\springboot-basic-project\spring-general-api\hibernate-flyway-api\src\main\java\com\general\HibernateFlywayApplication.java
+C:\Projects\CUSTOM\githup\springboot-basic-project\spring-general-api\hibernate-flyway-api\src\main\java\com\general\service\UnitServiceImpl.java
+C:\Projects\CUSTOM\githup\springboot-basic-project\spring-general-api\hibernate-flyway-api\src\main\java\com\general\controller\UnitController.java
+C:\Projects\CUSTOM\githup\springboot-basic-project\spring-general-api\hibernate-flyway-api\src\main\java\com\general\repository\UnitRepository.java

@@ -1,7 +1,7 @@
-com/general/repository/UnitRepository.class
-com/general/dao/Unit$UnitBuilder.class
-com/general/service/UnitService.class
-com/general/HibernateFlywayApplication.class
-com/general/dao/Unit.class
-com/general/service/UnitServiceImpl.class
-com/general/controller/UnitController.class
+com\general\controller\UnitController.class
+com\general\service\UnitService.class
+com\general\dao\Unit$UnitBuilder.class
+com\general\dao\Unit.class
+com\general\HibernateFlywayApplication.class
+com\general\service\UnitServiceImpl.class
+com\general\repository\UnitRepository.class

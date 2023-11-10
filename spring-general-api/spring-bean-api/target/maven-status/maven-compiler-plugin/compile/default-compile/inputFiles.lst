@@ -1,7 +1,7 @@
-/home/savas/CUSTOM/github/springboot-basic-project/spring-general-api/spring-bean-api/src/main/java/com/general/service/StockService.java
-/home/savas/CUSTOM/github/springboot-basic-project/spring-general-api/spring-bean-api/src/main/java/com/general/service/AccountService.java
-/home/savas/CUSTOM/github/springboot-basic-project/spring-general-api/spring-bean-api/src/main/java/com/general/SpringBeanApplication.java
-/home/savas/CUSTOM/github/springboot-basic-project/spring-general-api/spring-bean-api/src/main/java/com/general/service/CategoryService.java
-/home/savas/CUSTOM/github/springboot-basic-project/spring-general-api/spring-bean-api/src/main/java/com/general/repository/CategoryRepository.java
-/home/savas/CUSTOM/github/springboot-basic-project/spring-general-api/spring-bean-api/src/main/java/com/general/config/BeanConfig.java
-/home/savas/CUSTOM/github/springboot-basic-project/spring-general-api/spring-bean-api/src/main/java/com/general/service/CategoryProcess.java
+C:\Projects\CUSTOM\githup\springboot-basic-project\spring-general-api\spring-bean-api\src\main\java\com\general\service\AccountService.java
+C:\Projects\CUSTOM\githup\springboot-basic-project\spring-general-api\spring-bean-api\src\main\java\com\general\config\BeanConfig.java
+C:\Projects\CUSTOM\githup\springboot-basic-project\spring-general-api\spring-bean-api\src\main\java\com\general\service\CategoryProcess.java
+C:\Projects\CUSTOM\githup\springboot-basic-project\spring-general-api\spring-bean-api\src\main\java\com\general\repository\CategoryRepository.java
+C:\Projects\CUSTOM\githup\springboot-basic-project\spring-general-api\spring-bean-api\src\main\java\com\general\service\CategoryService.java
+C:\Projects\CUSTOM\githup\springboot-basic-project\spring-general-api\spring-bean-api\src\main\java\com\general\SpringBeanApplication.java
+C:\Projects\CUSTOM\githup\springboot-basic-project\spring-general-api\spring-bean-api\src\main\java\com\general\service\StockService.java
